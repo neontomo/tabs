@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+body {
+	font-family: "JetBrains Mono", "Courier New", Courier, monospace;
+	font-size: 13px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	width: 100%;
+}
+
+.string {
+	display: flex;
+	flex-direction: row;
+	font-variant-numeric: tabular-nums;
+	width: 100%;
+}
+
+.string:nth-child(1) {
+	font-weight: 400;
+}
+
+.string:nth-child(2) {
+	font-weight: 500;
+}
+
+.string:nth-child(3) {
+	font-weight: 600;
+}
+
+.string:nth-child(4) {
+	font-weight: 700;
+}
+
+.string:nth-child(5) {
+	font-weight: 800;
+}
+
+.string:nth-child(6) {
+	font-weight: 900;
+}
+
+.string::before {
+	content: attr(data-string-name);
+	position: relative;
+	left: -10px;
+}
